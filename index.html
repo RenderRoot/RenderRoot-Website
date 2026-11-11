@@ -1,4 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RenderRoot — A creative freelancing agency offering Video Editing, Web Development, Graphic Design, and Social Media Content." />
+  <title>RenderRoot — We Turn Raw Ideas Into Scroll-Stopping Reality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Ambient Blobs -->
+  <div class="blob blob-cyan" aria-hidden="true"></div>
+  <div class="blob blob-purple" aria-hidden="true"></div>
+  <div class="blob blob-pink" aria-hidden="true"></div>
+  <div class="blob blob-yellow" aria-hidden="true"></div>
+
+  <!-- Dot Grid Overlay -->
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <!-- Particles -->
+  <div class="particles" aria-hidden="true">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="RenderRoot Home">
+        <span class="logo-infinity">∞</span>
+        <span class="logo-text">RENDERROOT</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#founders" class="nav-link">Our Founders</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-quote" aria-label="Get a Quote">
+        <span class="btn-quote-inner">Get a Quote</span>
+        <span class="btn-quote-border" aria-hidden="true"></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-links" role="list">
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#why-us" class="mobile-link">Why Us</a></li>
+        <li><a href="#process" class="mobile-link">Process</a></li>
+        <li><a href="#founders" class="mobile-link">Our Founders</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-quote mobile-quote">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-left reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for new projects</span>
+          </div>
+
+          <h1 class="hero-heading">
+            YOUR <span class="gradient-word">VISION</span><br /> <span class="glow-word">OUR</span>
+            <span class="outline-word">EDIT</span>
+          </h1>
+
+          <p class="hero-sub">
+            We Turn <strong>Raw ideas</strong> Into<strong> </strong>
+            <strong>Scroll </strong> - <strong>Stopping</strong> Reality.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary" aria-label="Start a Project">
+              Start a Project →
+            </a>
+            <a href="#work" class="btn btn-secondary" aria-label="See Our Work">
+              <span class="btn-play" aria-hidden="true">▶</span> See Our Work
+            </a>
+          </div>
+
+          <!-- Trust Bar -->
+          <div class="trust-bar">
+            <div class="avatar-stack" aria-label="Client avatars">
+              <div class="avatar av1" aria-hidden="true">A</div>
+              <div class="avatar av2" aria-hidden="true">R</div>
+              <div class="avatar av3" aria-hidden="true">K</div>
+              <div class="avatar av4" aria-hidden="true">M</div>
+              <div class="avatar av5" aria-hidden="true">S</div>
+            </div>
+            <div class="trust-text">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <span><strong>150+</strong> Happy Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content — Video Editor UI Mockup -->
+        <div class="hero-right reveal reveal-right">
+          <div class="editor-mockup" aria-label="Video editor UI mockup">
+            <!-- Stat Badges -->
+            <div class="stat-badge stat-top" aria-label="4K 60FPS">
+              <span class="stat-icon">🎬</span>
+              <span>4K 60FPS</span>
+            </div>
+            <div class="stat-badge stat-bottom" aria-label="+340% Engagement">
+              <span class="stat-icon">📈</span>
+              <span>+340% Engagement</span>
+            </div>
+
+            <!-- Editor UI -->
+            <div class="editor-ui">
+              <!-- Preview Window -->
+              <div class="editor-preview">
+                <div class="preview-screen">
+                  <div class="preview-gradient"></div>
+                  <div class="preview-play" aria-hidden="true">▶</div>
+                  <div class="preview-label">PREVIEW</div>
+                </div>
+                <div class="editor-tools">
+                  <div class="tool-btn active" title="Cut">✂</div>
+                  <div class="tool-btn" title="Color Grade">🎨</div>
+                  <div class="tool-btn" title="Effects">✨</div>
+                  <div class="tool-btn" title="Audio">🎵</div>
+                  <div class="tool-btn" title="Export">📤</div>
+                </div>
+              </div>
+
+              <!-- Timeline -->
+              <div class="editor-timeline">
+                <div class="timeline-header">
+                  <span class="timeline-label">TIMELINE</span>
+                  <span class="timeline-time">00:02:34</span>
+                </div>
+                <!-- Tracks -->
+                <div class="track-row">
+                  <div class="track-label">V1</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-cyan"></div>
+                    <div class="track-clip clip-purple"></div>
+                    <div class="track-clip clip-cyan short"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">V2</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-purple short"></div>
+                    <div class="track-clip clip-pink"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">A1</div>
+                  <div class="track-content">
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">FX</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-yellow short"></div>
+                    <div class="track-clip clip-yellow short"></div>
+                    <div class="track-clip clip-yellow short"></div>
+                  </div>
+                </div>
+                <!-- Playhead -->
+                <div class="playhead" aria-hidden="true">
+                  <div class="playhead-head"></div>
+                  <div class="playhead-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Color Wheel Decoration -->
+            <div class="color-wheel" aria-hidden="true">
+              <div class="color-segment cs1"></div>
+              <div class="color-segment cs2"></div>
+              <div class="color-segment cs3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-chevron">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="#00F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
     </section>
 
     <!-- ===== SERVICES SECTION ===== -->
