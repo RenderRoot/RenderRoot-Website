@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RenderRoot — A creative freelancing agency offering Video Editing, Web Development, Graphic Design, and Social Media Content." />
+  <title>RenderRoot — We Turn Raw Ideas Into Scroll-Stopping Reality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Ambient Blobs -->
+  <div class="blob blob-cyan" aria-hidden="true"></div>
+  <div class="blob blob-purple" aria-hidden="true"></div>
+  <div class="blob blob-pink" aria-hidden="true"></div>
+  <div class="blob blob-yellow" aria-hidden="true"></div>
+
+  <!-- Dot Grid Overlay -->
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <!-- Particles -->
+  <div class="particles" aria-hidden="true">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="RenderRoot Home">
+        <span class="logo-infinity">∞</span>
+        <span class="logo-text">RENDERROOT</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#founders" class="nav-link">Our Founders</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-quote" aria-label="Get a Quote">
+        <span class="btn-quote-inner">Get a Quote</span>
+        <span class="btn-quote-border" aria-hidden="true"></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-links" role="list">
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#why-us" class="mobile-link">Why Us</a></li>
+        <li><a href="#process" class="mobile-link">Process</a></li>
+        <li><a href="#founders" class="mobile-link">Our Founders</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-quote mobile-quote">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-left reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for new projects</span>
+          </div>
+
+          <h1 class="hero-heading">
+            We Turn <span class="gradient-word">Raw Ideas</span><br />
+            Into <span class="glow-word">Scroll-Stopping</span><br />
+            <span class="outline-word">Reality</span>
+          </h1>
+
+          <p class="hero-sub">
+            Your go-to creative agency for <strong>video editing</strong>, <strong>web development</strong>,
+            <strong>graphic design</strong>, and <strong>social media content</strong> that converts viewers into customers.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary" aria-label="Start a Project">
+              Start a Project →
+            </a>
+            <a href="#work" class="btn btn-secondary" aria-label="See Our Work">
+              <span class="btn-play" aria-hidden="true">▶</span> See Our Work
+            </a>
+          </div>
+
+          <!-- Trust Bar -->
+          <div class="trust-bar">
+            <div class="avatar-stack" aria-label="Client avatars">
+              <div class="avatar av1" aria-hidden="true">A</div>
+              <div class="avatar av2" aria-hidden="true">R</div>
+              <div class="avatar av3" aria-hidden="true">K</div>
+              <div class="avatar av4" aria-hidden="true">M</div>
+              <div class="avatar av5" aria-hidden="true">S</div>
+            </div>
+            <div class="trust-text">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <span><strong>150+</strong> Happy Clients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content — Video Editor UI Mockup -->
+        <div class="hero-right reveal reveal-right">
+          <div class="editor-mockup" aria-label="Video editor UI mockup">
+            <!-- Stat Badges -->
+            <div class="stat-badge stat-top" aria-label="4K 60FPS">
+              <span class="stat-icon">🎬</span>
+              <span>4K 60FPS</span>
+            </div>
+            <div class="stat-badge stat-bottom" aria-label="+340% Engagement">
+              <span class="stat-icon">📈</span>
+              <span>+340% Engagement</span>
+            </div>
+
+            <!-- Editor UI -->
+            <div class="editor-ui">
+              <!-- Preview Window -->
+              <div class="editor-preview">
+                <div class="preview-screen">
+                  <div class="preview-gradient"></div>
+                  <div class="preview-play" aria-hidden="true">▶</div>
+                  <div class="preview-label">PREVIEW</div>
+                </div>
+                <div class="editor-tools">
+                  <div class="tool-btn active" title="Cut">✂</div>
+                  <div class="tool-btn" title="Color Grade">🎨</div>
+                  <div class="tool-btn" title="Effects">✨</div>
+                  <div class="tool-btn" title="Audio">🎵</div>
+                  <div class="tool-btn" title="Export">📤</div>
+                </div>
+              </div>
+
+              <!-- Timeline -->
+              <div class="editor-timeline">
+                <div class="timeline-header">
+                  <span class="timeline-label">TIMELINE</span>
+                  <span class="timeline-time">00:02:34</span>
+                </div>
+                <!-- Tracks -->
+                <div class="track-row">
+                  <div class="track-label">V1</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-cyan"></div>
+                    <div class="track-clip clip-purple"></div>
+                    <div class="track-clip clip-cyan short"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">V2</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-purple short"></div>
+                    <div class="track-clip clip-pink"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">A1</div>
+                  <div class="track-content">
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                    <div class="waveform-bar"></div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="track-label">FX</div>
+                  <div class="track-content">
+                    <div class="track-clip clip-yellow short"></div>
+                    <div class="track-clip clip-yellow short"></div>
+                    <div class="track-clip clip-yellow short"></div>
+                  </div>
+                </div>
+                <!-- Playhead -->
+                <div class="playhead" aria-hidden="true">
+                  <div class="playhead-head"></div>
+                  <div class="playhead-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Color Wheel Decoration -->
+            <div class="color-wheel" aria-hidden="true">
+              <div class="color-segment cs1"></div>
+              <div class="color-segment cs2"></div>
+              <div class="color-segment cs3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-chevron">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="#00F5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services" id="services" aria-label="Services">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-badge">OUR CAPABILITIES</div>
+          <h2 class="section-title">What We <span class="gradient-word">Do</span></h2>
+          <p class="section-desc">From raw footage to finished masterpieces — we handle every pixel, frame, and line of code.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Video Editing -->
+          <article class="service-card card-cyan reveal" aria-label="Video Editing Service">
+            <div class="card-icon" aria-hidden="true">🎬</div>
+            <h3 class="card-title">Video Editing</h3>
+            <p class="card-desc">D2C brand films, YouTube long-form, UGC, Podcasts, Commercials — edited to perfection.</p>
+            <ul class="card-bullets" role="list">
+              <li>High-retention pacing</li>
+              <li>Cinema-grade color grading</li>
+              <li>Sound design &amp; mastering</li>
+            </ul>
+            <div class="card-glow card-glow-cyan" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 2: Web Development -->
+          <article class="service-card card-purple reveal" aria-label="Web Development Service">
+            <div class="card-icon" aria-hidden="true">🌐</div>
+            <h3 class="card-title">Web Development</h3>
+            <p class="card-desc">Landing pages, full-stack apps, e-commerce, brand sites built for speed and conversions.</p>
+            <ul class="card-bullets" role="list">
+              <li>Sub-second load speeds</li>
+              <li>Interactive UI/UX animations</li>
+              <li>SEO-optimized semantic code</li>
+            </ul>
+            <div class="card-glow card-glow-purple" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 3: Graphic Design -->
+          <article class="service-card card-pink reveal" aria-label="Graphic Design Service">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3 class="card-title">Graphic Design</h3>
+            <p class="card-desc">Brand identity, thumbnails, logos, social media carousels that stop the scroll.</p>
+            <ul class="card-bullets" role="list">
+              <li>12%+ CTR thumbnails</li>
+              <li>Full brand design systems</li>
+              <li>Print &amp; digital assets</li>
+            </ul>
+            <div class="card-glow card-glow-pink" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 4: Social Media Editing -->
+          <article class="service-card card-yellow reveal" aria-label="Social Media Editing Service">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3 class="card-title">Social Media Editing</h3>
+            <p class="card-desc">Instagram Reels, YouTube Shorts, TikTok content crafted for maximum virality.</p>
+            <ul class="card-bullets" role="list">
+              <li>3-sec psychological hooks</li>
+              <li>Animated kinetic subtitles</li>
+              <li>30+ reels/month batches</li>
+            </ul>
+            <div class="card-glow card-glow-yellow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 5: Motion Graphics -->
+          <article class="service-card card-blue reveal" aria-label="Motion Graphics Service">
+            <div class="card-icon" aria-hidden="true">🎭</div>
+            <h3 class="card-title">Motion Graphics</h3>
+            <p class="card-desc">VFX, kinetic typography, 3D animations, lower thirds that elevate every frame.</p>
+            <ul class="card-bullets" role="list">
+              <li>2D &amp; 3D type animations</li>
+              <li>Data-driven infographic overlays</li>
+              <li>VFX compositing</li>
+            </ul>
+            <div class="card-glow card-glow-blue" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 6: Performance Ads -->
+          <article class="service-card card-purple reveal" aria-label="Performance Ads Service">
+            <div class="card-icon" aria-hidden="true">📢</div>
+            <h3 class="card-title">Performance Ads</h3>
+            <p class="card-desc">Direct-response ads, UGC compilations, creative variants for Meta &amp; TikTok that convert.</p>
+            <ul class="card-bullets" role="list">
+              <li>A/B creative testing variants</li>
+              <li>Problem-solution ad formula</li>
+              <li>ROAS-focused creatives</li>
+            </ul>
+            <div class="card-glow card-glow-purple" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK / PORTFOLIO SECTION ===== -->
+    <section class="work" id="work" aria-label="Portfolio">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-badge">OUR PORTFOLIO</div>
+          <h2 class="section-title">Work That <span class="gradient-word">Speaks Volumes</span></h2>
+          <p class="section-desc">A curated selection of projects that delivered real results for real clients.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs reveal" role="tablist" aria-label="Portfolio filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="video" role="tab" aria-selected="false">Video</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter-btn" data-filter="graphics" role="tab" aria-selected="false">Graphics</button>
+          <button class="filter-btn" data-filter="social" role="tab" aria-selected="false">Social</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Card 1 -->
+          <article class="portfolio-card" data-category="video" aria-label="D2C Brand Film project">
+            <div class="portfolio-thumb thumb-1">
+              <div class="thumb-art">
+                <div class="ta-circle ta-c1"></div>
+                <div class="ta-circle ta-c2"></div>
+                <div class="ta-line"></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-cyan">Video</span>
+              <h3 class="portfolio-title">D2C Brand Film</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="portfolio-card" data-category="web" aria-label="SaaS Landing Page project">
+            <div class="portfolio-thumb thumb-2">
+              <div class="thumb-art">
+                <div class="ta-browser">
+                  <div class="ta-bar"></div>
+                  <div class="ta-content"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-purple">Web</span>
+              <h3 class="portfolio-title">SaaS Landing Page</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="portfolio-card" data-category="graphics" aria-label="Luxury Brand Identity project">
+            <div class="portfolio-thumb thumb-3">
+              <div class="thumb-art">
+                <div class="ta-logo-shape"></div>
+                <div class="ta-swatch ts1"></div>
+                <div class="ta-swatch ts2"></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-pink">Graphics</span>
+              <h3 class="portfolio-title">Luxury Brand Identity</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="portfolio-card" data-category="social" aria-label="Viral Reel Series project">
+            <div class="portfolio-thumb thumb-4">
+              <div class="thumb-art">
+                <div class="ta-phone">
+                  <div class="ta-phone-screen"></div>
+                  <div class="ta-phone-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-yellow">Social</span>
+              <h3 class="portfolio-title">Viral Reel Series</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="portfolio-card" data-category="web" aria-label="E-Commerce Store project">
+            <div class="portfolio-thumb thumb-5">
+              <div class="thumb-art">
+                <div class="ta-cart">
+                  <div class="ta-cart-body"></div>
+                  <div class="ta-cart-wheel"></div>
+                  <div class="ta-cart-wheel tw2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-blue">Web</span>
+              <h3 class="portfolio-title">E-Commerce Store</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="portfolio-card" data-category="video" aria-label="Motion Reel project">
+            <div class="portfolio-thumb thumb-6">
+              <div class="thumb-art">
+                <div class="ta-reel">
+                  <div class="ta-reel-circle"></div>
+                  <div class="ta-reel-hole rh1"></div>
+                  <div class="ta-reel-hole rh2"></div>
+                  <div class="ta-reel-hole rh3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-badge badge-cyan">Video</span>
+              <h3 class="portfolio-title">Motion Reel</h3>
+            </div>
+            <div class="portfolio-overlay" aria-hidden="true">
+              <a href="#contact" class="overlay-btn">View Project →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY US SECTION ===== -->
+    <section class="why-us" id="why-us" aria-label="Why RenderRoot">
+      <div class="section-container">
+        <div class="why-us-layout">
+          <!-- Left -->
+          <div class="why-left reveal reveal-left">
+            <div class="section-badge">WHY RENDERROOT</div>
+            <h2 class="section-title why-title">The <span class="gradient-word">RenderRoot</span> Difference</h2>
+            <p class="why-desc">
+              We're not just another agency. We're a focused team of creative professionals who obsess over quality,
+              strategy, and results — delivering work that actually moves the needle.
+            </p>
+
+            <!-- Features -->
+            <div class="features-list">
+              <div class="feature-row">
+                <div class="feature-icon-wrap fi-cyan" aria-hidden="true">⚡</div>
+                <div class="feature-text">
+                  <h4>Blazing Fast Delivery</h4>
+                  <p>48–72 hour turnarounds without compromising quality</p>
+                </div>
+              </div>
+              <div class="feature-row">
+                <div class="feature-icon-wrap fi-purple" aria-hidden="true">🎯</div>
+                <div class="feature-text">
+                  <h4>Strategy-Driven</h4>
+                  <p>Every pixel has a purpose — we design with intent</p>
+                </div>
+              </div>
+              <div class="feature-row">
+                <div class="feature-icon-wrap fi-pink" aria-hidden="true">🔄</div>
+                <div class="feature-text">
+                  <h4>Unlimited Revisions</h4>
+                  <p>We iterate until you're completely in love with the result</p>
+                </div>
+              </div>
+              <div class="feature-row">
+                <div class="feature-icon-wrap fi-yellow" aria-hidden="true">💎</div>
+                <div class="feature-text">
+                  <h4>Premium Quality</h4>
+                  <p>Cinema-grade production values on every deliverable</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right — Stats -->
+          <div class="why-right reveal reveal-right">
+            <div class="stats-grid">
+              <div class="stat-card sc-cyan">
+                <div class="stat-number" data-target="150" aria-label="150+ Clients">0</div>
+                <div class="stat-suffix">+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+              <div class="stat-card sc-purple">
+                <div class="stat-number" data-target="1200" aria-label="1200+ Projects">0</div>
+                <div class="stat-suffix">+</div>
+                <div class="stat-label">Projects Done</div>
+              </div>
+              <div class="stat-card sc-pink">
+                <div class="stat-number" data-target="5" aria-label="5 star rating">0</div>
+                <div class="stat-suffix">★</div>
+                <div class="stat-label">Average Rating</div>
+              </div>
+              <div class="stat-card sc-yellow">
+                <div class="stat-number" data-target="48" aria-label="48 hour turnaround">0</div>
+                <div class="stat-suffix">hr</div>
+                <div class="stat-label">Avg Turnaround</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section class="process" id="process" aria-label="Our Process">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-badge">HOW WE WORK</div>
+          <h2 class="section-title">From Brief to <span class="gradient-word">Brilliant</span></h2>
+          <p class="section-desc">A streamlined process designed to get you exceptional results, every time.</p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Step 1 -->
+          <div class="process-step reveal">
+            <div class="step-dot sd-cyan" aria-hidden="true"><span>1</span></div>
+            <div class="step-card">
+              <div class="step-icon" aria-hidden="true">🔍</div>
+              <h3 class="step-title">Discovery</h3>
+              <p class="step-desc">We dive deep into your brand, goals, and audience to understand what success looks like.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step reveal">
+            <div class="step-dot sd-purple" aria-hidden="true"><span>2</span></div>
+            <div class="step-card">
+              <div class="step-icon" aria-hidden="true">📋</div>
+              <h3 class="step-title">Strategy</h3>
+              <p class="step-desc">We craft a creative direction tailored to your objectives, audience, and platform.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step reveal">
+            <div class="step-dot sd-pink" aria-hidden="true"><span>3</span></div>
+            <div class="step-card">
+              <div class="step-icon" aria-hidden="true">⚙️</div>
+              <h3 class="step-title">Production</h3>
+              <p class="step-desc">Our team executes with precision and creativity, bringing your vision to life.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step reveal">
+            <div class="step-dot sd-yellow" aria-hidden="true"><span>4</span></div>
+            <div class="step-card">
+              <div class="step-icon" aria-hidden="true">👁️</div>
+              <h3 class="step-title">Review</h3>
+              <p class="step-desc">Revise and refine together until every detail is exactly right.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step reveal">
+            <div class="step-dot sd-cyan" aria-hidden="true"><span>5</span></div>
+            <div class="step-card">
+              <div class="step-icon" aria-hidden="true">🚀</div>
+              <h3 class="step-title">Launch</h3>
+              <p class="step-desc">Deliver in all formats, ready to publish and dominate your niche.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOUNDERS SECTION ===== -->
+    <section class="founders" id="founders" aria-label="Our Founders">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-badge">THE TEAM</div>
+          <h2 class="section-title">Meet the <span class="gradient-word">Minds</span> Behind RenderRoot</h2>
+          <p class="section-desc">Three creatives. One vision. Infinite possibilities.</p>
+        </div>
+
+        <div class="founders-grid">
+          <!-- Founder 1: Deepanshu Srivastava -->
+          <article class="founder-card reveal" aria-label="Aryan Sharma, Co-Founder and Creative Director">
+            <div class="founder-avatar fa-cyan" aria-hidden="true">DS</div>
+            <div class="founder-info">
+              <h3 class="founder-name">Deepanshu Srivastava</h3>
+              <p class="founder-role">Founder &amp; Creative Director</p>
+              <p class="founder-bio">5+ years crafting viral video content for 100+ brands. Obsessed with storytelling that converts.</p>
+              <div class="founder-skills">
+                <span class="skill-tag">Video Editing</span>
+                <span class="skill-tag">Motion Graphics</span>
+                <span class="skill-tag">Strategy</span>
+              </div>
+              <div class="founder-socials" aria-label="Aryan Sharma social links">
+                <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              </div>
+            </div>
+            <div class="founder-glow fg-cyan" aria-hidden="true"></div>
+          </article>
+
+          <!-- Founder 2: Vansh Gupta -->
+          <article class="founder-card reveal" aria-label="Karan Mehta, Co-Founder and Full-Stack Developer">
+            <div class="founder-avatar fa-pink" aria-hidden="true">VG</div>
+            <div class="founder-info">
+              <h3 class="founder-name">Vansh Gupta</h3>
+              <p class="founder-role">Co-Founder &amp; Full-Stack Dev</p>
+              <p class="founder-bio">Builds blazing-fast websites that look stunning and convert like clockwork.</p>
+              <div class="founder-skills">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Webflow</span>
+                <span class="skill-tag">SEO</span>
+              </div>
+              <div class="founder-socials" aria-label="Karan Mehta social links">
+                <a href="https://www.instagram.com/vnc_vansh_03/" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              </div>
+            </div>
+            <div class="founder-glow fg-pink" aria-hidden="true"></div>
+          </article>
+
+          <!-- Founder 3: Riya Kapoor -->
+          <article class="founder-card reveal" aria-label="Riya Kapoor, Co-Founder and Lead Designer">
+            <div class="founder-avatar fa-purple" aria-hidden="true">RK</div>
+            <div class="founder-info">
+              <h3 class="founder-name">Riya Kapoor</h3>
+              <p class="founder-role">Co-Founder &amp; Lead Designer</p>
+              <p class="founder-bio">Brand identity expert with an eye for what makes people stop scrolling and start clicking.</p>
+              <div class="founder-skills">
+                <span class="skill-tag">Brand Design</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">Typography</span>
+              </div>
+              <div class="founder-socials" aria-label="Riya Kapoor social links">
+                <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              </div>
+            </div>
+            <div class="founder-glow fg-purple" aria-hidden="true"></div>
+          </article>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="section-badge">GET IN TOUCH</div>
+          <h2 class="section-title">Ready to Render <span class="gradient-word">Something Great?</span></h2>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left — Contact Info -->
+          <div class="contact-info reveal reveal-left">
+            <p class="contact-desc">Tell us about your project. We'll get back to you within 24 hours.</p>
+
+            <div class="contact-rows">
+              <div class="contact-row">
+                <div class="contact-icon-wrap" aria-hidden="true">📧</div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:hello@renderroot.studio" class="contact-value">hello@renderroot.studio</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon-wrap" aria-hidden="true">📱</div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <a href="tel:+919876543210" class="contact-value">+91 98765 43210</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon-wrap" aria-hidden="true">📍</div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <span class="contact-value">Remote — Serving Clients Worldwide</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="#" class="contact-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+              <a href="#" class="contact-social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+              <a href="#" class="contact-social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a href="#" class="contact-social-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Right — Contact Form -->
+          <div class="contact-form-wrap reveal reveal-right">
+            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="hello@email.com" required aria-required="true" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service" class="form-label">Service Needed</label>
+                  <select id="service" name="service" class="form-input form-select" aria-label="Select a service">
+                    <option value="" disabled selected>Select a service…</option>
+                    <option value="video">Video Editing</option>
+                    <option value="web">Web Development</option>
+                    <option value="graphic">Graphic Design</option>
+                    <option value="social">Social Media</option>
+                    <option value="motion">Motion Graphics</option>
+                    <option value="ads">Performance Ads</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget" class="form-label">Budget Range</label>
+                  <select id="budget" name="budget" class="form-input form-select" aria-label="Select budget range">
+                    <option value="" disabled selected>Select budget…</option>
+                    <option value="under10k">Under ₹10K</option>
+                    <option value="10k-25k">₹10K – ₹25K</option>
+                    <option value="25k-50k">₹25K – ₹50K</option>
+                    <option value="50kplus">₹50K+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Tell Us About Your Project</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe your project, goals, timeline…" required aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit" id="submit-btn" aria-label="Send Message">
+                <span class="submit-text">Send Message →</span>
+                <span class="submit-loading" aria-hidden="true">Sending…</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-gradient-line" aria-hidden="true"></div>
+    <div class="footer-container">
+      <div class="footer-top">
+        <!-- Logo & Tagline -->
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo" aria-label="RenderRoot Home">
+            <span class="logo-infinity">∞</span>
+            <span class="logo-text">RENDERROOT</span>
+          </a>
+          <p class="footer-tagline">We Turn Raw Ideas Into Scroll-Stopping Reality</p>
+          <div class="footer-socials" aria-label="RenderRoot social media links">
+            <a href="#" class="contact-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" class="contact-social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+            <a href="#" class="contact-social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" class="contact-social-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Services</h4>
+          <ul role="list">
+            <li><a href="#services" class="footer-link">Video Editing</a></li>
+            <li><a href="#services" class="footer-link">Web Development</a></li>
+            <li><a href="#services" class="footer-link">Graphic Design</a></li>
+            <li><a href="#services" class="footer-link">Social Media</a></li>
+            <li><a href="#services" class="footer-link">Motion Graphics</a></li>
+            <li><a href="#services" class="footer-link">Performance Ads</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Company</h4>
+          <ul role="list">
+            <li><a href="#why-us" class="footer-link">About Us</a></li>
+            <li><a href="#work" class="footer-link">Our Work</a></li>
+            <li><a href="#process" class="footer-link">Our Process</a></li>
+            <li><a href="#founders" class="footer-link">Our Team</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Social</h4>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Instagram</a></li>
+            <li><a href="#" class="footer-link">YouTube</a></li>
+            <li><a href="#" class="footer-link">LinkedIn</a></li>
+            <li><a href="#" class="footer-link">Twitter / X</a></li>
+            <li><a href="#" class="footer-link">Behance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Refund Policy</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 RenderRoot Studio. Crafted with ❤️ and way too much caffeine.</p>
+        <p class="footer-made">∞ RenderRoot</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite" aria-hidden="true">
+    <span class="toast-icon">✅</span>
+    <span class="toast-msg">Message sent! We'll reply within 24 hours.</span>
+  </div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    'use strict';
+
+    /* =====================================================
+       1. CURSOR GLOW
+    ===================================================== */
+    const cursorGlow = document.getElementById('cursor-glow');
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      glowX += (mouseX - glowX) * 0.08;
+      glowY += (mouseY - glowY) * 0.08;
+      cursorGlow.style.left = glowX + 'px';
+      cursorGlow.style.top = glowY + 'px';
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    /* =====================================================
+       2. SCROLL REVEAL — IntersectionObserver
+    ===================================================== */
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* =====================================================
+       3. NAVBAR SCROLL — add scrolled class
+    ===================================================== */
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      updateActiveNavLink();
+    }, { passive: true });
+
+    /* =====================================================
+       4. HAMBURGER MENU
+    ===================================================== */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen.toString());
+      mobileMenu.setAttribute('aria-hidden', (!isOpen).toString());
+    });
+
+    // Close on mobile link click
+    document.querySelectorAll('.mobile-link, .mobile-quote').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    /* =====================================================
+       5. COUNTER ANIMATION
+    ===================================================== */
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let countersStarted = false;
+
+    function animateCounters() {
+      statNumbers.forEach(el => {
+        const target = parseInt(el.getAttribute('data-target'), 10);
+        const duration = 2000;
+        const start = performance.now();
+
+        function update(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target);
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      });
+    }
+
+    const statsSection = document.querySelector('.stats-grid');
+    if (statsSection) {
+      const statsObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !countersStarted) {
+          countersStarted = true;
+          animateCounters();
+          statsObserver.disconnect();
+        }
+      }, { threshold: 0.4 });
+      statsObserver.observe(statsSection);
+    }
+
+    /* =====================================================
+       6. ACTIVE NAV LINK
+    ===================================================== */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateActiveNavLink() {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    /* =====================================================
+       7. PORTFOLIO FILTER
+    ===================================================== */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const filter = btn.getAttribute('data-filter');
+
+        portfolioCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const matches = filter === 'all' || category === filter;
+
+          if (matches) {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.9)';
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.9)';
+            setTimeout(() => { card.style.display = 'none'; }, 300);
+          }
+        });
+      });
+    });
+
+    /* =====================================================
+       8. FORM SUBMISSION
+    ===================================================== */
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const toast = document.getElementById('toast');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          contactForm.classList.add('shake');
+          setTimeout(() => contactForm.classList.remove('shake'), 500);
+          return;
+        }
+
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
+          contactForm.reset();
+          toast.classList.add('show');
+          toast.setAttribute('aria-hidden', 'false');
+          setTimeout(() => {
+            toast.classList.remove('show');
+            toast.setAttribute('aria-hidden', 'true');
+          }, 4000);
+        }, 1800);
+      });
+    }
+
+    /* =====================================================
+       9. SMOOTH SCROLL
+    ===================================================== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        const href = anchor.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* =====================================================
+       10. PORTFOLIO CARD TRANSITION INIT
+    ===================================================== */
+    portfolioCards.forEach(card => {
+      card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    });
+
+  </script>
+</body>
+</html>
